@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do Pênalti - Trabalho Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="card-jogo">
+        <h1>DESAFIO DO PÊNALTI ⚽</h1>
+        
+        <div class="painel-placar">
+            <p>Gols: <span id="placar-gols">0</span></p>
+            <p>Defesas: <span id="placar-defesas">0</span></p>
+        </div>
+
+        <!-- Gol modesto com a rede, o goleiro e a bola -->
+        <div class="trave">
+            <div id="goleiro">🧤</div>
+            <div id="bola">⚽</div>
+        </div>
+
+        <!-- Botões para escolher onde chutar -->
+        <div class="controles-chute">
+            <button class="btn-chute" id="canto-0">Esquerda ↖</button>
+            <button class="btn-chute" id="canto-1">Centro ⬆</button>
+            <button class="btn-chute" id="canto-2">Direita ↗</button>
+        </div>
+
+        <p id="mensagem-status">Escolha onde quer chutar!</p>
+
+        <button id="btn-reiniciar">Reiniciar Placar 🔄</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
