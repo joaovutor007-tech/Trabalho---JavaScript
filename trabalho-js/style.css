@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #12181b;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-jogo {
+    background-color: #1f292d;
+    border: 2px solid #2b3a40;
+    border-radius: 12px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 16px;
+    color: #00e676;
+    margin-bottom: 15px;
+}
+
+.painel-placar {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background-color: #12181b;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Gol modesto com rede simples */
+.trave {
+    width: 260px;
+    height: 120px;
+    margin: 0 auto 15px auto;
+    border: 4px solid #ffffff;
+    border-bottom: none;
+    background-color: #2e7d32;
+    background-image: radial-gradient(#388e3c 15%, transparent 16%);
+    background-size: 12px 12px;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+}
+
+/* Emoji do Goleiro */
+#goleiro {
+    font-size: 32px;
+    position: absolute;
+    bottom: 5px;
+    left: 114px; /* Posição centralizada */
+    transition: all 0.4s ease-out;
+}
+
+/* Emoji da Bola */
+#bola {
+    font-size: 20px;
+    position: absolute;
+    bottom: -25px; /* Começa escondida abaixo do gol */
+    left: 120px;
+    transition: all 0.4s ease-out;
+}
+
+/* Estilização dos Botões de Chute */
+.controles-chute {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.btn-chute {
+    flex: 1;
+    background-color: #2b3a40;
+    border: 1px solid #00e676;
+    color: #ffffff;
+    padding: 8px 4px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-chute:hover {
+    background-color: #00e676;
+    color: #000000;
+}
+
+.btn-chute:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#mensagem-status {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffea00;
+    min-height: 20px;
+    margin-bottom: 15px;
+}
+
+#btn-reiniciar {
+    background-color: #2196f3;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#btn-reiniciar:hover {
+    background-color: #1e88e5;
+}
